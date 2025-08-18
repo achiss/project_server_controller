@@ -1,7 +1,7 @@
-from typing import TypeAlias, Type, Tuple, Any
+from typing import TypeAlias, Type, Tuple
 from subprocess import run
 
-T: TypeAlias = bool | Tuple[str, Type[BaseException]]
+T: TypeAlias = bool | Tuple[str, Type[Exception]]
 
 
 def run_command(command: str,
@@ -13,7 +13,9 @@ def run_command(command: str,
     try:
         _result = run(command, shell=True, check=True, capture_output=True)
         if is_check_error and _result.stderr:
-            _message: str = message_runtime.format(message_func, command, _result.stderr)
+            _message: str = message_runtime.format(
+                message_func,
+                f'during ({command}) error - {_result.stderr}')
             return _message, RuntimeError
 
         return True
