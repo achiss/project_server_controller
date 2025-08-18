@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/server_controller" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/_source_version" />
       <excludeFolder url="file://$MODULE_DIR$/_temp" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.13 (server_controller_venv)" jdkType="Python SDK" />

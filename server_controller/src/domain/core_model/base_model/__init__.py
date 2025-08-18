@@ -1,0 +1,1 @@
+from src.domain.core_model.base_model.base_exception_model import BaseExceptionModel

@@ -1,0 +1,1 @@
+from src.domain.interface.ibase_exception_model import IBaseExceptionModel
