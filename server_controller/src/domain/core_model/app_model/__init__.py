@@ -1,1 +1,0 @@
-from src.domain.core_model.app_model.exception.exception_executor import ExceptionExecutor

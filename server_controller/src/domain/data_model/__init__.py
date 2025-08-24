@@ -1,1 +1,0 @@
-from src.domain.data_model.struct_base_exception_model import StructBaseExceptionModel

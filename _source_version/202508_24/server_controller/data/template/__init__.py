@@ -1,0 +1,1 @@
+from data.template import BASE_UPDATE_UPGRADE, BASE_APP_INSTALL, BASE_APP_REMOVE
